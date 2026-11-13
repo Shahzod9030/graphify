@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 from typing import List
 
-from .scan import iter_files, read_text
+from scan import iter_files, read_text
 
 # Har bir til uchun imzo (signature) qatorlarini tutadigan shablonlar
 PATTERNS = {

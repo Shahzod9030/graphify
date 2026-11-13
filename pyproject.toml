@@ -19,7 +19,7 @@ dependencies = []
 exact = ["tiktoken>=0.5"]
 
 [project.scripts]
-graphify = "graphify.cli:main"
+graphify = "cli:main"
 
-[tool.setuptools.packages.find]
-include = ["graphify*"]
+[tool.setuptools]
+py-modules = ["cli", "scan", "tokens", "mapgen", "graphgen", "gitignore"]

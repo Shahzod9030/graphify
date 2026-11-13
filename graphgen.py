@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 from typing import Dict, List, Set, Tuple
 
-from .scan import iter_files, read_text
+from scan import iter_files, read_text
 
 JS_IMPORT = re.compile(r"""(?:import\s.*?from\s+|require\(\s*)['"](\.[^'"]+)['"]""")
 PY_FROM = re.compile(r"^\s*from\s+(\.[\w.]+)\s+import", re.M)

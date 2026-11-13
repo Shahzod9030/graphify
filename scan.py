@@ -5,8 +5,8 @@ import os
 from pathlib import Path
 from typing import Iterator, List, Tuple
 
-from .gitignore import load_gitignore
-from .tokens import count_tokens
+from gitignore import load_gitignore
+from tokens import count_tokens
 
 SKIP_DIRS = {
     ".git", "node_modules", ".venv", "venv", "env", "__pycache__",

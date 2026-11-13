@@ -4,11 +4,11 @@ from __future__ import annotations
 import argparse
 import sys
 
-from . import __version__
-from .graphgen import build_graph
-from .mapgen import build_map
-from .scan import scan
-from .tokens import EXACT, cost, human
+__version__ = "0.2.0"
+from graphgen import build_graph
+from mapgen import build_map
+from scan import scan
+from tokens import EXACT, cost, human
 
 
 def cmd_scan(args: argparse.Namespace) -> int:
